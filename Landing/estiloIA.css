@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #343636;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: #3498db;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    background-color: #3498db;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+form label, form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contacto, #desarrollador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contacto {
+    flex-basis: 48%; /* Ancho de la sección de contacto */
+}
+
+#desarrollador {
+    flex-basis: 48%; /* Ancho de la sección del desarrollador */
+}
+
+
+
+
+/* Estilos para ocultar los checkboxes */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilos para las etiquetas (botones) */
+label {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* Estilos para las categorías (cursos) */
+.categoria {
+    display: none;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para mostrar las categorías cuando la casilla está marcada */
+input[type="checkbox"]:checked + label + .categoria {
+    display: block;
+}
+
+
+.button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.categoria {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cursos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cursos li {
+    margin-bottom: 20px;
+    margin: 0 20px; /* Espaciado entre cursos */
+}
+
+.cursos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.language-section {
+    display: inline-block;
+    width: 45%; /* Establece el ancho de cada sección según tus preferencias */
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/*estilo de botones */
+/* Estilo para el botón */
+.button-estilo {
+    border: 2px solid #343636; /* Bordes de color #343636 */
+    background-color: #88c5ee; /* Relleno de color #88c5ee */
+    color: #fff; /* Color de texto blanco (opcional) */
+    padding: 10px 20px; /* Espaciado interno para el contenido del botón */
+    text-align: center; /* Alineación del texto en el centro (opcional) */
+    text-decoration: none; /* Eliminar subrayado del texto (opcional) */
+    display: inline-block; /* Para que el botón se comporte como un elemento en línea */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón (opcional) */
+}
+

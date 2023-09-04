@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloIA.css">
+    <title>Institución X - Cursos</title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#cursos">Nuestros Cursos</a></li>
+                <!--<li><a href="#PS">Catedra</a></li>-->
+                <li><a href="#contacto">Información de Contacto</a></li>
+                <li><a href="#desarrollador">Acerca del Desarrollador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <section>
+        <h2>Nuestros Cursos</h2>
+        <section class="language-section" id="section-ingles">
+            <input type="checkbox" id="toggle-ingles">
+            <label for="toggle-ingles">Inglés</label>
+            <div class="categoria">
+                <!-- Cursos de inglés aquí -->
+                <input type="checkbox" id="t-i-1">
+                <label for="t-i-1">Introduction to Artificial Intelligence</label>
+                <div class="categoria">
+                    <li>
+                        <a href="pdf/1-ing-basico" download>
+                            <button class="button-estilo">Ingles Basico</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pdf/1-ing-avanzado" download>
+                            <button class="button-estilo">Ingles Avanzado</button>
+                        </a>
+                    </li>
+                </div>
+                <input type="checkbox" id="t-i-2">
+                <label for="t-i-2">Advanced Graphic Design</label>
+                <div class="categoria">
+                    <li>
+                        <a href="pdf/2-ing-basico" download>
+                            <button class="button-estilo">Ingles Basico</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pdf/2-ing-avanzado" download>
+                            <button class="button-estilo">Ingles Avanzado</button>
+                        </a>
+                    </li>
+                </div>
+                <input type="checkbox" id="t-i-3">
+                <label for="t-i-3">Python Programming for Beginners</label>
+                <div class="categoria">
+                    <li>
+                        <a href="pdf/3-ing-basico" download>
+                            <button class="button-estilo">Ingles Basico</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pdf/3-ing-avanzado" download>
+                            <button class="button-estilo">Ingles Avanzado</button>
+                        </a>
+                    </li>
+                </div>
+
+            </div>
+        </section>
+        <section class="language-section" id="section-frances">
+            <input type="checkbox" id="toggle-frances">
+            <label for="toggle-frances">Francés</label>
+            <div class="categoria">
+                <!-- Cursos de francés aquí -->
+
+
+
+                <input type="checkbox" id="t-f-1">
+                <label for="t-f-1">Marketing Numérique Stratégique</label>
+                <div class="categoria">
+                    <li>
+                        <a href="pdf/1-fr-basico" download>
+                            <button class="button-estilo">Frances Basico</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pdf/1-fr-avanzado" download>
+                            <button class="button-estilo">Frances Avanzado</button>
+                        </a>
+                    </li>
+                </div>
+                <input type="checkbox" id="t-f-2">
+                <label for="t-f-2">Anglais pour les Voyageurs</label>
+                <div class="categoria">
+                    <li>
+                        <a href="pdf/2-fr-basico" download>
+                            <button class="button-estilo">Frances Basico</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pdf/2-fr-avanzado" download>
+                            <button class="button-estilo">Frances Avanzado</button>
+                        </a>
+                    </li>
+                </div>
+                <input type="checkbox" id="t-f-3">
+                <label for="t-f-3">Développement d'Applications Mobiles avec Flutter</label>
+                <div class="categoria">
+                    <li>
+                        <a href="pdf/3-fr-basico" download>
+                            <button class="button-estilo">Frances Basico</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pdf/3-fr-avanzado" download>
+                            <button class="button-estilo">Frances Avanzado</button>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--
+    <section id="PS">
+        <h2 >PROYECTO DE SOFTWARE</h2>
+        <input type="checkbox" id="t-ps">
+        <label for="t-ps">ACTIVIDAD 1</label>
+        <div class="categoria" >
+        <p>Tenemos que generar un sitio web estatico (sin scripts) para publicar cursos dictados por una institucion x. <br>
+            el programa de los mismos se encuentra almacenados en archivos pdf. para esto, hay que contemplar las siguientes condiciones:<br>
+                1. se debe mostrar una barra de navegacion (dispuesta como mas les guste) con enlaces a:<br>
+                    - informacion de contacto (un formulario simple conlos datos que les parezcan mas adecuados)<br>
+                    - informacion de quien mantiene el sitio.<br>
+                    - catalogo de los cursos distribuido en dos categorias: ingles y frances.<br>
+                2. pueden indicar los colores y estilos que prefieran.<br>
+                3. respecto a la interaccion con el sitio, se debe poder elegir una categoria (ya sea desde una lista de opciones desplegable o radio
+                buttons o la opcion que refieran) y al seleccionar dicha categoria, mostrar los cursos asociados y un enlace para descargar el programa. siempre en forma estatica.<br>
+                4. respecto a lo pedido en la seccion anterior, se debe mostr4ar por cada curso algo similar a lo siguiente, donde se especifica el tipo de borde y relleno.<br>
+                5. eel sitio debe ser responsivo.<br>
+                6. solo se debe usar HTML y CSS.<br>
+                7. las reglas de estilo deben estar en un archivo separado denominado estilosIA.css<br>
+                8. se debe trabajar con al menos 3 cursos por cada categoriia a mostrar cuyos programas estaran en el directorio programas.<br>
+        </p>
+        <p href="youtube.com">
+            A continuacion se encuentra el path (ficticio) del video:<br>
+            www.youtube.com
+        </p>
+        </div>
+
+    </section>
+-->
+
+    <section id="contacto">
+        <h2>Información de Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <button type="submit">Quiero que me contacten</button>
+        </form>
+    </section>
+
+    <section id="desarrollador">
+        <h2>Acerca del Desarrollador</h2>
+        <h3>Ezequiel Galluzzo</h3>
+        <p>ezequiel.galluzzo@foo.foo</p>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
